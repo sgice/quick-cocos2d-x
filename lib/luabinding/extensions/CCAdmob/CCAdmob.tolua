@@ -1,0 +1,11 @@
+class CCAdmob
+{
+public:
+    
+    static CCAdmob *instance();
+    
+    void init(const char * admob_id, const char * inter_id, int pos);
+    bool showInter();
+    void showBanner();
+    void hideBanner();
+};

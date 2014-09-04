@@ -1,0 +1,13 @@
+class CCUnicom
+{
+public:
+    
+    static CCUnicom *instance();
+    
+    void registerListener(LUA_FUNCTION listener);
+
+    void paysms( const char * goodname, const char * goodsubid, 
+                 const char * costmoney);
+    
+};
+

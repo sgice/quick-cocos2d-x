@@ -1,0 +1,11 @@
+class CCChartboost
+{
+public:
+
+    static CCChartboost *instance();
+
+    void startSession(const char* appid, const char *signature);
+    bool showAds();
+    void showMoreApp();
+
+};

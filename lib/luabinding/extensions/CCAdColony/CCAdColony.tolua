@@ -1,0 +1,13 @@
+class CCAdColony:public CCAdColonyObserver
+{
+public:
+    
+    static CCAdColony *instance();
+    
+    void configAd(const char* appid, const char *zoneid);
+    void showAds(const char *zoneid);
+    int rewardsAvailable(const char * zoneid);
+    void registerListener(LUA_FUNCTION listener);
+    
+};
+

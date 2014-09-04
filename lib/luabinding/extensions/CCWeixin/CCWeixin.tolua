@@ -1,0 +1,30 @@
+class CCWeixin
+{
+public:
+    static CCWeixin* instance();
+    
+    void regApp(const char * wx_app_id );
+
+    bool isWeixinAvailable();
+
+    void SendText(const char * text_msg);
+    void PostText(const char * text_msg);
+
+    void SendUrl(const char * text, const char * title, const char *url, const char *thumbfile);
+    void PostUrl(const char * text, const char * title, const char *url, const char *thumbfile);
+
+    void SendMusic(const char * text, const char * title, const char * url, const char * data_url, const char * thumbfile);
+    void PostMusic(const char * text, const char * title, const char * url, const char * data_url, const char * thumbfile);
+
+    void SendImage(const char * text, const char * title, const char * imagefile,  const char * thumbfile);
+    void PostImage(const char * text, const char * title, const char * imagefile,  const char * thumbfile);
+
+    void SendVideo(const char * text, const char * title, const char * videofile,  const char * thumbfile);
+    void PostVideo(const char * text, const char * title, const char * videofile,  const char * thumbfile);
+    
+    void SendApp(const char *text, const char * title, const char * custom_info, const char * thumbfile);
+    void PostApp(const char *text, const char * title, const char * custom_info, const char * thumbfile);
+
+    void registerListener(LUA_FUNCTION listener);
+
+};

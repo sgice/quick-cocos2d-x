@@ -75,4 +75,11 @@
 #include "CocoStudio/Action/ActionManager.h"
 #include "CocoStudio/Action/CCActionNode.h"
 
+#include "CCGameCenter/CCGameCenter.h"
+#include "CCWeixin/CCWeixin.h"
+#include "CCChartboost/CCChartboost.h"
+#include "CCAdColony/CCAdColony.h"
+#include "CCAdmob/CCAdmob.h"
+#include "CCUnicom/CCUnicom.h"
+
 #endif /* __COCOS2D_EXT_H__ */

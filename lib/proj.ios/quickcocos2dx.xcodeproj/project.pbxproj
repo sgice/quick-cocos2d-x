@@ -27,6 +27,16 @@
 		2EBAD93D1918BBDC00FF9BD6 /* ccFilterShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EBAD92A1918BBDC00FF9BD6 /* ccFilterShaders.cpp */; };
 		49832215187FE2C000733BFB /* CZHelperFunc_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49832213187FE2C000733BFB /* CZHelperFunc_luabinding.cpp */; };
 		49832219187FE2DF00733BFB /* HelperFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49832217187FE2DF00733BFB /* HelperFunc.cpp */; };
+		7FECFE4F19B6F7D500D81D65 /* Admob.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE4B19B6F7D500D81D65 /* Admob.mm */; };
+		7FECFE5819B6F81F00D81D65 /* Chartboost.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE5419B6F81F00D81D65 /* Chartboost.mm */; };
+		7FECFE5919B6F81F00D81D65 /* ChartboostIOSDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE5619B6F81F00D81D65 /* ChartboostIOSDelegate.mm */; };
+		7FECFE6019B6F83C00D81D65 /* GameCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE5D19B6F83C00D81D65 /* GameCenter.mm */; };
+		7FECFE6619B6F86100D81D65 /* Unicom.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE6419B6F86100D81D65 /* Unicom.mm */; };
+		7FECFE7119B6F8B400D81D65 /* Weixin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE6A19B6F8B400D81D65 /* Weixin.mm */; };
+		7FECFE7219B6F8B400D81D65 /* WeixinIos.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE6C19B6F8B400D81D65 /* WeixinIos.mm */; };
+		7FECFE7319B6F8B400D81D65 /* WeixinRespReq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE6D19B6F8B400D81D65 /* WeixinRespReq.cpp */; };
+		7FECFE7D19B8038000D81D65 /* AdColony.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE7719B8038000D81D65 /* AdColony.mm */; };
+		7FECFE7E19B8038000D81D65 /* AdColonyIOSDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE7919B8038000D81D65 /* AdColonyIOSDelegate.mm */; };
 		B2DC7993181BA55A001341D6 /* lsqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = B2DC798F181BA55A001341D6 /* lsqlite3.c */; };
 		B2DC7994181BA55A001341D6 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = B2DC7991181BA55A001341D6 /* sqlite3.c */; };
 		E5C463441987A250001192EA /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5C462EE1987A24F001192EA /* Animation.cpp */; };
@@ -518,6 +528,39 @@
 		49832214187FE2C000733BFB /* CZHelperFunc_luabinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZHelperFunc_luabinding.h; sourceTree = "<group>"; };
 		49832217187FE2DF00733BFB /* HelperFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelperFunc.cpp; sourceTree = "<group>"; };
 		49832218187FE2DF00733BFB /* HelperFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperFunc.h; sourceTree = "<group>"; };
+		7FECFE4119B6F7D500D81D65 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		7FECFE4219B6F7D500D81D65 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		7FECFE4319B6F7D500D81D65 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		7FECFE4419B6F7D500D81D65 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		7FECFE4519B6F7D500D81D65 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		7FECFE4619B6F7D500D81D65 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		7FECFE4719B6F7D500D81D65 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		7FECFE4819B6F7D500D81D65 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		7FECFE4919B6F7D500D81D65 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		7FECFE4B19B6F7D500D81D65 /* Admob.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Admob.mm; sourceTree = "<group>"; };
+		7FECFE4C19B6F7D500D81D65 /* CCAdmob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAdmob.h; sourceTree = "<group>"; };
+		7FECFE4D19B6F7D500D81D65 /* CCAdmobIos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAdmobIos.h; sourceTree = "<group>"; };
+		7FECFE5119B6F81F00D81D65 /* CCChartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCChartboost.h; sourceTree = "<group>"; };
+		7FECFE5319B6F81F00D81D65 /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
+		7FECFE5419B6F81F00D81D65 /* Chartboost.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Chartboost.mm; sourceTree = "<group>"; };
+		7FECFE5519B6F81F00D81D65 /* ChartboostIOSDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartboostIOSDelegate.h; sourceTree = "<group>"; };
+		7FECFE5619B6F81F00D81D65 /* ChartboostIOSDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChartboostIOSDelegate.mm; sourceTree = "<group>"; };
+		7FECFE5B19B6F83C00D81D65 /* CCGameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGameCenter.h; sourceTree = "<group>"; };
+		7FECFE5D19B6F83C00D81D65 /* GameCenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameCenter.mm; sourceTree = "<group>"; };
+		7FECFE5E19B6F83C00D81D65 /* GameCenterIos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterIos.h; sourceTree = "<group>"; };
+		7FECFE6219B6F86100D81D65 /* CCUnicom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCUnicom.h; sourceTree = "<group>"; };
+		7FECFE6419B6F86100D81D65 /* Unicom.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Unicom.mm; sourceTree = "<group>"; };
+		7FECFE6819B6F8B400D81D65 /* CCWeixin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWeixin.h; sourceTree = "<group>"; };
+		7FECFE6A19B6F8B400D81D65 /* Weixin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Weixin.mm; sourceTree = "<group>"; };
+		7FECFE6B19B6F8B400D81D65 /* WeixinIos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinIos.h; sourceTree = "<group>"; };
+		7FECFE6C19B6F8B400D81D65 /* WeixinIos.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WeixinIos.mm; sourceTree = "<group>"; };
+		7FECFE6D19B6F8B400D81D65 /* WeixinRespReq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WeixinRespReq.cpp; sourceTree = "<group>"; };
+		7FECFE6E19B6F8B400D81D65 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		7FECFE6F19B6F8B400D81D65 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		7FECFE7719B8038000D81D65 /* AdColony.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AdColony.mm; sourceTree = "<group>"; };
+		7FECFE7819B8038000D81D65 /* AdColonyIOSDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdColonyIOSDelegate.h; sourceTree = "<group>"; };
+		7FECFE7919B8038000D81D65 /* AdColonyIOSDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AdColonyIOSDelegate.mm; sourceTree = "<group>"; };
+		7FECFE7A19B8038000D81D65 /* CCAdColony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAdColony.h; sourceTree = "<group>"; };
 		B2DC798F181BA55A001341D6 /* lsqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lsqlite3.c; sourceTree = "<group>"; };
 		B2DC7990181BA55A001341D6 /* lsqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lsqlite3.h; sourceTree = "<group>"; };
 		B2DC7991181BA55A001341D6 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
@@ -1574,6 +1617,89 @@
 			path = apptools;
 			sourceTree = "<group>";
 		};
+		7FECFE3F19B6F7D500D81D65 /* CCAdmob */ = {
+			isa = PBXGroup;
+			children = (
+				7FECFE4019B6F7D500D81D65 /* admob */,
+				7FECFE4B19B6F7D500D81D65 /* Admob.mm */,
+				7FECFE4C19B6F7D500D81D65 /* CCAdmob.h */,
+				7FECFE4D19B6F7D500D81D65 /* CCAdmobIos.h */,
+			);
+			path = CCAdmob;
+			sourceTree = "<group>";
+		};
+		7FECFE4019B6F7D500D81D65 /* admob */ = {
+			isa = PBXGroup;
+			children = (
+				7FECFE4119B6F7D500D81D65 /* GADAdMobExtras.h */,
+				7FECFE4219B6F7D500D81D65 /* GADAdNetworkExtras.h */,
+				7FECFE4319B6F7D500D81D65 /* GADAdSize.h */,
+				7FECFE4419B6F7D500D81D65 /* GADBannerView.h */,
+				7FECFE4519B6F7D500D81D65 /* GADBannerViewDelegate.h */,
+				7FECFE4619B6F7D500D81D65 /* GADInterstitial.h */,
+				7FECFE4719B6F7D500D81D65 /* GADInterstitialDelegate.h */,
+				7FECFE4819B6F7D500D81D65 /* GADRequest.h */,
+				7FECFE4919B6F7D500D81D65 /* GADRequestError.h */,
+			);
+			path = admob;
+			sourceTree = "<group>";
+		};
+		7FECFE5019B6F81F00D81D65 /* CCChartboost */ = {
+			isa = PBXGroup;
+			children = (
+				7FECFE5119B6F81F00D81D65 /* CCChartboost.h */,
+				7FECFE5319B6F81F00D81D65 /* Chartboost.h */,
+				7FECFE5419B6F81F00D81D65 /* Chartboost.mm */,
+				7FECFE5519B6F81F00D81D65 /* ChartboostIOSDelegate.h */,
+				7FECFE5619B6F81F00D81D65 /* ChartboostIOSDelegate.mm */,
+			);
+			path = CCChartboost;
+			sourceTree = "<group>";
+		};
+		7FECFE5A19B6F83C00D81D65 /* CCGameCenter */ = {
+			isa = PBXGroup;
+			children = (
+				7FECFE5B19B6F83C00D81D65 /* CCGameCenter.h */,
+				7FECFE5D19B6F83C00D81D65 /* GameCenter.mm */,
+				7FECFE5E19B6F83C00D81D65 /* GameCenterIos.h */,
+			);
+			path = CCGameCenter;
+			sourceTree = "<group>";
+		};
+		7FECFE6119B6F86100D81D65 /* CCUnicom */ = {
+			isa = PBXGroup;
+			children = (
+				7FECFE6219B6F86100D81D65 /* CCUnicom.h */,
+				7FECFE6419B6F86100D81D65 /* Unicom.mm */,
+			);
+			path = CCUnicom;
+			sourceTree = "<group>";
+		};
+		7FECFE6719B6F8B400D81D65 /* CCWeixin */ = {
+			isa = PBXGroup;
+			children = (
+				7FECFE6819B6F8B400D81D65 /* CCWeixin.h */,
+				7FECFE6A19B6F8B400D81D65 /* Weixin.mm */,
+				7FECFE6B19B6F8B400D81D65 /* WeixinIos.h */,
+				7FECFE6C19B6F8B400D81D65 /* WeixinIos.mm */,
+				7FECFE6D19B6F8B400D81D65 /* WeixinRespReq.cpp */,
+				7FECFE6E19B6F8B400D81D65 /* WXApi.h */,
+				7FECFE6F19B6F8B400D81D65 /* WXApiObject.h */,
+			);
+			path = CCWeixin;
+			sourceTree = "<group>";
+		};
+		7FECFE7419B8038000D81D65 /* CCAdColony */ = {
+			isa = PBXGroup;
+			children = (
+				7FECFE7719B8038000D81D65 /* AdColony.mm */,
+				7FECFE7819B8038000D81D65 /* AdColonyIOSDelegate.h */,
+				7FECFE7919B8038000D81D65 /* AdColonyIOSDelegate.mm */,
+				7FECFE7A19B8038000D81D65 /* CCAdColony.h */,
+			);
+			path = CCAdColony;
+			sourceTree = "<group>";
+		};
 		B2DC798E181BA55A001341D6 /* lsqlite3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2447,6 +2573,12 @@
 		F45A2E11166B16DC00760194 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7FECFE7419B8038000D81D65 /* CCAdColony */,
+				7FECFE6719B6F8B400D81D65 /* CCWeixin */,
+				7FECFE6119B6F86100D81D65 /* CCUnicom */,
+				7FECFE5A19B6F83C00D81D65 /* CCGameCenter */,
+				7FECFE5019B6F81F00D81D65 /* CCChartboost */,
+				7FECFE3F19B6F7D500D81D65 /* CCAdmob */,
 				E5C462EC1987A24F001192EA /* DragonBones */,
 				F42825BB17575DD7001479DC /* AssetsManager */,
 				F4E883441770162500577406 /* CCBReader */,
@@ -3780,6 +3912,7 @@
 				E5C463521987A250001192EA /* dbtinyxml2.cpp in Sources */,
 				F42824FB17575D88001479DC /* CCConfiguration.cpp in Sources */,
 				F459EAFD180D04E1006CBDF1 /* cpDampedRotarySpring.c in Sources */,
+				7FECFE7219B6F8B400D81D65 /* WeixinIos.mm in Sources */,
 				F42824FC17575D88001479DC /* CCDirector.cpp in Sources */,
 				F42824FD17575D88001479DC /* ccFPSImages.c in Sources */,
 				F42824FE17575D88001479DC /* CCScheduler.cpp in Sources */,
@@ -3840,6 +3973,7 @@
 				F4E882B1177015C400577406 /* CCActionTiledGrid.cpp in Sources */,
 				F4E882B2177015C400577406 /* CCActionTween.cpp in Sources */,
 				F4D26ECD196321AE0087295D /* TriggerObj.cpp in Sources */,
+				7FECFE6019B6F83C00D81D65 /* GameCenter.mm in Sources */,
 				F4E882B3177015C400577406 /* CCAtlasNode.cpp in Sources */,
 				F4ABAE98191A8DC300FEA3CD /* LuaCocoStudio.cpp in Sources */,
 				F4E882B4177015C400577406 /* CCGLBufferedNode.cpp in Sources */,
@@ -3895,6 +4029,7 @@
 				F4E882CC177015C400577406 /* neon_matrix_impl.c in Sources */,
 				F4E882CD177015C400577406 /* plane.c in Sources */,
 				2EBAD92F1918BBDC00FF9BD6 /* CCDropShadowFilter.cpp in Sources */,
+				7FECFE5919B6F81F00D81D65 /* ChartboostIOSDelegate.mm in Sources */,
 				F4E882CE177015C400577406 /* quaternion.c in Sources */,
 				F4E882CF177015C400577406 /* ray2.c in Sources */,
 				F4E882D0177015C400577406 /* utility.c in Sources */,
@@ -3905,6 +4040,7 @@
 				F4E882D2177015C400577406 /* vec3.c in Sources */,
 				F459EA70180D04D8006CBDF1 /* cocos2dx_extra_luabinding.cpp in Sources */,
 				F4D26E9E196321AE0087295D /* CCUtilMath.cpp in Sources */,
+				7FECFE6619B6F86100D81D65 /* Unicom.mm in Sources */,
 				F4D26E8E196321AE0087295D /* CCTween.cpp in Sources */,
 				F4D26EA8196321AE0087295D /* CocosGUI.cpp in Sources */,
 				F459EB0F180D04E1006CBDF1 /* cpShape.c in Sources */,
@@ -3951,6 +4087,7 @@
 				F4E882EA177015C400577406 /* CCGLProgram.cpp in Sources */,
 				F4D26E82196321AE0087295D /* CCActionFrame.cpp in Sources */,
 				F459EB86180D0513006CBDF1 /* options.c in Sources */,
+				7FECFE7E19B8038000D81D65 /* AdColonyIOSDelegate.mm in Sources */,
 				F4E882EB177015C400577406 /* ccGLStateCache.cpp in Sources */,
 				E5C4634F1987A250001192EA /* SoundEvent.cpp in Sources */,
 				F4E882EC177015C400577406 /* CCShaderCache.cpp in Sources */,
@@ -3977,6 +4114,7 @@
 				F4E882F7177015C400577406 /* CCProfiling.cpp in Sources */,
 				F4E882F8177015C400577406 /* ccUTF8.cpp in Sources */,
 				E5C463561987A250001192EA /* CCDBAtlasNode.cpp in Sources */,
+				7FECFE7119B6F8B400D81D65 /* Weixin.mm in Sources */,
 				2EBAD92D1918BBDC00FF9BD6 /* CCBrightnessFilter.cpp in Sources */,
 				F4D26EA2196321AE0087295D /* CCComRender.cpp in Sources */,
 				F4E882F9177015C400577406 /* ccUtils.cpp in Sources */,
@@ -3998,6 +4136,7 @@
 				F4D26E8B196321AE0087295D /* CCTimeLine.cpp in Sources */,
 				F4E882FF177015C400577406 /* tinyxml2.cpp in Sources */,
 				F4E88300177015C400577406 /* TransformUtils.cpp in Sources */,
+				7FECFE7319B6F8B400D81D65 /* WeixinRespReq.cpp in Sources */,
 				F459EB00180D04E1006CBDF1 /* cpGrooveJoint.c in Sources */,
 				E5C463481987A250001192EA /* Bone.cpp in Sources */,
 				F40118BD180C9E57002A74D5 /* CCBProxy.cpp in Sources */,
@@ -4073,6 +4212,7 @@
 				E5C463571987A250001192EA /* CCDBDisplayBridge.cpp in Sources */,
 				F4E88342177015FF00577406 /* EAGLView.mm in Sources */,
 				F4E88343177015FF00577406 /* AccelerometerSimulation.m in Sources */,
+				7FECFE4F19B6F7D500D81D65 /* Admob.mm in Sources */,
 				F4D26E9A196321AE0087295D /* CCDataReaderHelper.cpp in Sources */,
 				F4E883821770162500577406 /* CCBAnimationManager.cpp in Sources */,
 				F459EB0D180D04E1006CBDF1 /* cpHashSet.c in Sources */,
@@ -4131,6 +4271,7 @@
 				F4E883991770162500577406 /* CCSpriteLoader.cpp in Sources */,
 				F4E883C21770163800577406 /* CCControl.cpp in Sources */,
 				F459EB8C180D0513006CBDF1 /* udp.c in Sources */,
+				7FECFE5819B6F81F00D81D65 /* Chartboost.mm in Sources */,
 				F459EB11180D04E1006CBDF1 /* cpSpaceComponent.c in Sources */,
 				F4E883C31770163800577406 /* CCControlButton.cpp in Sources */,
 				F4E883C41770163800577406 /* CCControlColourPicker.cpp in Sources */,
@@ -4146,6 +4287,7 @@
 				F4E883CA1770163800577406 /* CCControlSwitch.cpp in Sources */,
 				E5C463601987A250001192EA /* DBGeometry.cpp in Sources */,
 				F4D26E83196321AE0087295D /* CCActionFrameEasing.cpp in Sources */,
+				7FECFE7D19B8038000D81D65 /* AdColony.mm in Sources */,
 				F4A3A8F2182E7B810000EDD1 /* xxtea.c in Sources */,
 				F4E883CB1770163800577406 /* CCControlUtils.cpp in Sources */,
 				F459EB8A180D0513006CBDF1 /* tcp.c in Sources */,
@@ -4231,6 +4373,10 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				DSTROOT = /tmp/libquickcocos2dx.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dujun/dev/game/quick-cocos2d-x/lib/cocos2d-x/extensions/CCAdColony",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = quickcocos2dx.pch;
@@ -4290,6 +4436,10 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				DSTROOT = /tmp/libquickcocos2dx.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dujun/dev/game/quick-cocos2d-x/lib/cocos2d-x/extensions/CCAdColony",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = quickcocos2dx.pch;
