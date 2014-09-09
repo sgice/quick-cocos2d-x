@@ -25,6 +25,9 @@ package org.cocos2dx.lib;
 
 import org.cocos2dx.lib.Cocos2dxHelper.Cocos2dxHelperListener;
 
+import com.chartboost.sdk.Chartboost;
+import com.jirbo.adcolony.AdColony;
+
 import android.app.Activity;
 import android.content.Context;
 import android.os.Build;
@@ -41,6 +44,9 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 
 	public static final int GLVIEW_ID = 1000;
 	private static final String TAG = Cocos2dxActivity.class.getSimpleName();
+	protected String cb_id, cb_sign, adc_id, adc_zone,admob_id;
+	protected String inter_id;
+	protected int admob_pos;
 
 	// ===========================================================
 	// Fields
@@ -67,6 +73,14 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
     	this.init();
 
 		Cocos2dxHelper.init(this, this);
+		
+		if(cb_id!=null)CCChartboost.Instance().init(this, cb_id, cb_sign);
+		if(adc_id!=null){
+			AdColony.configure( this, "version:1.0,store:google", adc_id, adc_zone );
+			AdColony.addV4VCListener( CCAdColony.Instance() );
+		    AdColony.addAdAvailabilityListener( CCAdColony.Instance() );
+		}
+		if(admob_id!=null)CCAdmob.Instance().init(this, admob_id, inter_id, admob_pos);
 	}
 
 	// ===========================================================
@@ -76,6 +90,34 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 	// ===========================================================
 	// Methods for/from SuperClass/Interfaces
 	// ===========================================================
+	@Override
+	protected void onStart() {
+		super.onStart();
+		if(cb_id!=null)Chartboost.onStart(this);
+	}
+	
+	@Override
+	protected void onStop() {
+		super.onStop();
+		if(cb_id!=null)Chartboost.onStop(this);
+	}
+	
+	@Override
+	public void onBackPressed() {
+	     // If an interstitial is on screen, close it. Otherwise continue as normal.
+        if (cb_id!=null && Chartboost.onBackPressed())
+            return;
+        else
+            super.onBackPressed();
+	}
+	
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		if(cb_id!=null)Chartboost.onDestroy(this);
+	}
 
 	@Override
 	protected void onResume() {
@@ -83,6 +125,9 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 
 		Cocos2dxHelper.onResume();
 		this.mGLSurfaceView.onResume();
+		if(cb_id!=null)Chartboost.onResume(this);
+		if(adc_id!=null)AdColony.resume(this);
+		if(admob_id!=null)CCAdmob.resume();
 	}
 
 	@Override
@@ -91,6 +136,9 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 
 		Cocos2dxHelper.onPause();
 		this.mGLSurfaceView.onPause();
+		if(cb_id!=null)Chartboost.onPause(this);
+		if(adc_id!=null)AdColony.resume(this);
+		if(admob_id!=null)CCAdmob.resume();
 	}
 
 	@Override
