@@ -1,5 +1,5 @@
 #include "CCChartboost.h"
-#import "Chartboost.h"
+#import <Chartboost/Chartboost.h>
 #import "ChartboostIOSDelegate.h"
 
 CCChartboost *CCChartboost::s_instance = NULL;
@@ -14,36 +14,24 @@ CCChartboost *CCChartboost::instance(){
 }
 
 void CCChartboost::startSession(const char* appid, const char *signature){
-    Chartboost *cb = [Chartboost sharedChartboost];
-    
-    cb.appId = [NSString stringWithUTF8String:appid];
-    cb.appSignature = [NSString stringWithUTF8String:signature];
-    
-    // Required for use of delegate methods. See "Advanced Topics" section below.
-    cb.delegate = cb_delegate;
-    NSLog(@"chartboost startsession with appid %@, sign %@\n", cb.appId, cb.appSignature);
     // Begin a user session. Must not be dependent on user actions or any prior network requests.
     // Must be called every time your app becomes active.
-    [cb startSession];
+    [Chartboost startWithAppId:[NSString stringWithUTF8String:appid] appSignature:[NSString stringWithUTF8String:signature] delegate:cb_delegate];
     
     // Show an interstitial
     //[cb cacheInterstitial];
-    [cb cacheMoreApps];
+    //[Chartboost cacheMoreApps];
 }
 bool CCChartboost::showAds(){
     bool shown = false;
-    Chartboost *cb = [Chartboost sharedChartboost];
-    
-    if ([cb hasCachedInterstitial]){
-        [cb showInterstitial];
+    if ([Chartboost hasInterstitial:CBLocationHomeScreen]){
+        [Chartboost showInterstitial:CBLocationHomeScreen];
         shown = true;
     }else{
-        [cb cacheInterstitial];
+        [Chartboost cacheInterstitial:CBLocationHomeScreen];
     }
     return shown;
 }
 void CCChartboost::showMoreApp(){
-    Chartboost *cb = [Chartboost sharedChartboost];
-    
-    [cb showMoreApps];
+    [Chartboost showMoreApps:CBLocationHomeScreen];
 }

@@ -541,7 +541,6 @@
 		7FECFE4C19B6F7D500D81D65 /* CCAdmob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAdmob.h; sourceTree = "<group>"; };
 		7FECFE4D19B6F7D500D81D65 /* CCAdmobIos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAdmobIos.h; sourceTree = "<group>"; };
 		7FECFE5119B6F81F00D81D65 /* CCChartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCChartboost.h; sourceTree = "<group>"; };
-		7FECFE5319B6F81F00D81D65 /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
 		7FECFE5419B6F81F00D81D65 /* Chartboost.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Chartboost.mm; sourceTree = "<group>"; };
 		7FECFE5519B6F81F00D81D65 /* ChartboostIOSDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartboostIOSDelegate.h; sourceTree = "<group>"; };
 		7FECFE5619B6F81F00D81D65 /* ChartboostIOSDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChartboostIOSDelegate.mm; sourceTree = "<group>"; };
@@ -1648,7 +1647,6 @@
 			isa = PBXGroup;
 			children = (
 				7FECFE5119B6F81F00D81D65 /* CCChartboost.h */,
-				7FECFE5319B6F81F00D81D65 /* Chartboost.h */,
 				7FECFE5419B6F81F00D81D65 /* Chartboost.mm */,
 				7FECFE5519B6F81F00D81D65 /* ChartboostIOSDelegate.h */,
 				7FECFE5619B6F81F00D81D65 /* ChartboostIOSDelegate.mm */,
@@ -4375,7 +4373,8 @@
 				DSTROOT = /tmp/libquickcocos2dx.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/dujun/dev/game/quick-cocos2d-x/lib/cocos2d-x/extensions/CCAdColony",
+					"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/CCAdColony",
+					"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/CCChartboost",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -4438,7 +4437,8 @@
 				DSTROOT = /tmp/libquickcocos2dx.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/dujun/dev/game/quick-cocos2d-x/lib/cocos2d-x/extensions/CCAdColony",
+					"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/CCAdColony",
+					"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/CCChartboost",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

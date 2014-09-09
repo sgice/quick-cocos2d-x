@@ -1,4 +1,4 @@
-#import "Chartboost.h"
+#import <Chartboost/Chartboost.h>
 
 @interface ChartboostIOSDelegate : NSObject <ChartboostDelegate>
 

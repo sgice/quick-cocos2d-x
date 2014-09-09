@@ -19,10 +19,10 @@
 		2EDD2799191B639C004F9539 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD2794191B639C004F9539 /* AppController.mm */; };
 		2EDD279A191B639C004F9539 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD2795191B639C004F9539 /* main.m */; };
 		2EDD279B191B639C004F9539 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD2798191B639C004F9539 /* RootViewController.mm */; };
+		7F625D1619BF281F006D4622 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F625D1519BF281F006D4622 /* Chartboost.framework */; };
 		7FECFE8119B8066100D81D65 /* CCAdmobIos.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE7F19B8066100D81D65 /* CCAdmobIos.m */; };
 		7FECFE8219B8066100D81D65 /* GameCenterIos.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE8019B8066100D81D65 /* GameCenterIos.m */; };
 		7FECFE8519B806BC00D81D65 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FECFE8419B806BC00D81D65 /* AdColony.framework */; };
-		7FECFE8919B807CD00D81D65 /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FECFE8619B807CD00D81D65 /* libChartboost.a */; };
 		7FECFE8A19B807CD00D81D65 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FECFE8719B807CD00D81D65 /* libGoogleAdMobAds.a */; };
 		7FECFE8B19B807CD00D81D65 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FECFE8819B807CD00D81D65 /* libWeChatSDK.a */; };
 		7FECFE8D19B808D300D81D65 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FECFE8C19B808D300D81D65 /* CoreMedia.framework */; };
@@ -79,10 +79,10 @@
 		2EDD2796191B639C004F9539 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		2EDD2797191B639C004F9539 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		2EDD2798191B639C004F9539 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
+		7F625D1519BF281F006D4622 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chartboost.framework; path = "lib/cocos2d-x/extensions/CCChartboost/Chartboost.framework"; sourceTree = QUICK_COCOS2DX_ROOT; };
 		7FECFE7F19B8066100D81D65 /* CCAdmobIos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAdmobIos.m; sourceTree = "<group>"; };
 		7FECFE8019B8066100D81D65 /* GameCenterIos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterIos.m; sourceTree = "<group>"; };
 		7FECFE8419B806BC00D81D65 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = "lib/cocos2d-x/extensions/CCAdColony/AdColony.framework"; sourceTree = QUICK_COCOS2DX_ROOT; };
-		7FECFE8619B807CD00D81D65 /* libChartboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libChartboost.a; path = "lib/cocos2d-x/cocos2dx/platform/third_party/ios/libraries/libChartboost.a"; sourceTree = QUICK_COCOS2DX_ROOT; };
 		7FECFE8719B807CD00D81D65 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAdMobAds.a; path = "lib/cocos2d-x/cocos2dx/platform/third_party/ios/libraries/libGoogleAdMobAds.a"; sourceTree = QUICK_COCOS2DX_ROOT; };
 		7FECFE8819B807CD00D81D65 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = "lib/cocos2d-x/cocos2dx/platform/third_party/ios/libraries/libWeChatSDK.a"; sourceTree = QUICK_COCOS2DX_ROOT; };
 		7FECFE8C19B808D300D81D65 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -119,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F625D1619BF281F006D4622 /* Chartboost.framework in Frameworks */,
 				7FECFE9B19B8093100D81D65 /* GameKit.framework in Frameworks */,
 				7FECFE9919B8090D00D81D65 /* MessageUI.framework in Frameworks */,
 				7FECFE9719B8090500D81D65 /* AdSupport.framework in Frameworks */,
@@ -127,7 +128,6 @@
 				7FECFE9119B808E700D81D65 /* Social.framework in Frameworks */,
 				7FECFE8F19B808DE00D81D65 /* MediaPlayer.framework in Frameworks */,
 				7FECFE8D19B808D300D81D65 /* CoreMedia.framework in Frameworks */,
-				7FECFE8919B807CD00D81D65 /* libChartboost.a in Frameworks */,
 				7FECFE8A19B807CD00D81D65 /* libGoogleAdMobAds.a in Frameworks */,
 				7FECFE8B19B807CD00D81D65 /* libWeChatSDK.a in Frameworks */,
 				7FECFE8519B806BC00D81D65 /* AdColony.framework in Frameworks */,
@@ -225,6 +225,7 @@
 		F456ECC415EE018E00FCF3E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F625D1519BF281F006D4622 /* Chartboost.framework */,
 				7FECFE9A19B8093100D81D65 /* GameKit.framework */,
 				7FECFE9819B8090D00D81D65 /* MessageUI.framework */,
 				7FECFE9619B8090500D81D65 /* AdSupport.framework */,
@@ -233,7 +234,6 @@
 				7FECFE9019B808E700D81D65 /* Social.framework */,
 				7FECFE8E19B808DE00D81D65 /* MediaPlayer.framework */,
 				7FECFE8C19B808D300D81D65 /* CoreMedia.framework */,
-				7FECFE8619B807CD00D81D65 /* libChartboost.a */,
 				7FECFE8719B807CD00D81D65 /* libGoogleAdMobAds.a */,
 				7FECFE8819B807CD00D81D65 /* libWeChatSDK.a */,
 				7FECFE8419B806BC00D81D65 /* AdColony.framework */,
@@ -472,6 +472,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/CCAdColony",
+					"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/CCChartboost",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -546,6 +547,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/CCAdColony",
+					"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/CCChartboost",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
