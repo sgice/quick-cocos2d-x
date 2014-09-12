@@ -528,6 +528,9 @@
 		49832214187FE2C000733BFB /* CZHelperFunc_luabinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZHelperFunc_luabinding.h; sourceTree = "<group>"; };
 		49832217187FE2DF00733BFB /* HelperFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelperFunc.cpp; sourceTree = "<group>"; };
 		49832218187FE2DF00733BFB /* HelperFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperFunc.h; sourceTree = "<group>"; };
+		7F12494019C2DD1F00FADC12 /* GADInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchase.h; sourceTree = "<group>"; };
+		7F12494119C2DD1F00FADC12 /* GADInAppPurchaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchaseDelegate.h; sourceTree = "<group>"; };
+		7F12494219C2DD1F00FADC12 /* GADModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADModules.h; sourceTree = "<group>"; };
 		7FECFE4119B6F7D500D81D65 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
 		7FECFE4219B6F7D500D81D65 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
 		7FECFE4319B6F7D500D81D65 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
@@ -1630,6 +1633,9 @@
 		7FECFE4019B6F7D500D81D65 /* admob */ = {
 			isa = PBXGroup;
 			children = (
+				7F12494019C2DD1F00FADC12 /* GADInAppPurchase.h */,
+				7F12494119C2DD1F00FADC12 /* GADInAppPurchaseDelegate.h */,
+				7F12494219C2DD1F00FADC12 /* GADModules.h */,
 				7FECFE4119B6F7D500D81D65 /* GADAdMobExtras.h */,
 				7FECFE4219B6F7D500D81D65 /* GADAdNetworkExtras.h */,
 				7FECFE4319B6F7D500D81D65 /* GADAdSize.h */,
