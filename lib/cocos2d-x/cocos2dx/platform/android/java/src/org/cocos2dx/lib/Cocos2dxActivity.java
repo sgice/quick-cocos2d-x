@@ -46,6 +46,7 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 	private static final String TAG = Cocos2dxActivity.class.getSimpleName();
 	protected String cb_id, cb_sign, adc_id, adc_zone,admob_id;
 	protected String inter_id;
+	protected String telcom_addr;
 	protected int admob_pos;
 
 	// ===========================================================
@@ -81,6 +82,7 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 		    AdColony.addAdAvailabilityListener( CCAdColony.Instance() );
 		}
 		if(admob_id!=null)CCAdmob.Instance().init(this, admob_id, inter_id, admob_pos);
+		if(telcom_addr!=null)CCTelcom.Instance().init(this, telcom_addr);
 	}
 
 	// ===========================================================

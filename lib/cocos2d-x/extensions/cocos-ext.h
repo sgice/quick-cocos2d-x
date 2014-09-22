@@ -81,5 +81,6 @@
 #include "CCAdColony/CCAdColony.h"
 #include "CCAdmob/CCAdmob.h"
 #include "CCUnicom/CCUnicom.h"
+#include "CCTelcom/CCTelcom.h"
 
 #endif /* __COCOS2D_EXT_H__ */

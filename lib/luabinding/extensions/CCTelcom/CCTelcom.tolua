@@ -1,0 +1,13 @@
+
+class CCTelcom
+{
+public:
+    
+    static CCTelcom *instance();
+    
+    void registerListener(LUA_FUNCTION listener);
+
+    void paysms( const char * stext, const char * goodsubid, const char *oderid);
+    
+};
+

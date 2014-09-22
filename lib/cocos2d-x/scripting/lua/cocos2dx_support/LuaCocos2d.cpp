@@ -1,6 +1,6 @@
 /*
 ** Lua binding: Cocos2d
-** Generated automatically by tolua++-1.0.92 on Wed Sep  3 15:12:37 2014.
+** Generated automatically by tolua++-1.0.92 on Mon Sep 22 12:41:30 2014.
 */
 
 /****************************************************************************
@@ -670,6 +670,8 @@ static void tolua_reg_types (lua_State* tolua_S)
  toluafix_add_type_mapping(CLASS_HASH_CODE(typeid(CCTransitionFadeUp)), "CCTransitionFadeUp");
  tolua_usertype(tolua_S,"CCTransitionProgressVertical");
  toluafix_add_type_mapping(CLASS_HASH_CODE(typeid(CCTransitionProgressVertical)), "CCTransitionProgressVertical");
+ tolua_usertype(tolua_S,"CCTelcom");
+ toluafix_add_type_mapping(CLASS_HASH_CODE(typeid(CCTelcom)), "CCTelcom");
  tolua_usertype(tolua_S,"CCAccelerometer");
  toluafix_add_type_mapping(CLASS_HASH_CODE(typeid(CCAccelerometer)), "CCAccelerometer");
  tolua_usertype(tolua_S,"CCParticleSmoke");
@@ -68328,6 +68330,104 @@ static int tolua_Cocos2d_CCUnicom_paysms00(lua_State* tolua_S)
 }
 #endif //#ifndef TOLUA_DISABLE
 
+/* method: instance of class  CCTelcom */
+#ifndef TOLUA_DISABLE_tolua_Cocos2d_CCTelcom_instance00
+static int tolua_Cocos2d_CCTelcom_instance00(lua_State* tolua_S)
+{
+#ifndef TOLUA_RELEASE
+ tolua_Error tolua_err;
+ if (
+     !tolua_isusertable(tolua_S,1,"CCTelcom",0,&tolua_err) ||
+     !tolua_isnoobj(tolua_S,2,&tolua_err)
+ )
+  goto tolua_lerror;
+ else
+#endif
+ {
+  {
+   CCTelcom* tolua_ret = (CCTelcom*)  CCTelcom::instance();
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"CCTelcom");
+  }
+ }
+ return 1;
+#ifndef TOLUA_RELEASE
+ tolua_lerror:
+ tolua_error(tolua_S,"#ferror in function 'instance'.",&tolua_err);
+ return 0;
+#endif
+}
+#endif //#ifndef TOLUA_DISABLE
+
+/* method: registerListener of class  CCTelcom */
+#ifndef TOLUA_DISABLE_tolua_Cocos2d_CCTelcom_registerListener00
+static int tolua_Cocos2d_CCTelcom_registerListener00(lua_State* tolua_S)
+{
+#ifndef TOLUA_RELEASE
+ tolua_Error tolua_err;
+ if (
+     !tolua_isusertype(tolua_S,1,"CCTelcom",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !toluafix_isfunction(tolua_S,2,"LUA_FUNCTION",0,&tolua_err)) ||
+     !tolua_isnoobj(tolua_S,3,&tolua_err)
+ )
+  goto tolua_lerror;
+ else
+#endif
+ {
+  CCTelcom* self = (CCTelcom*)  tolua_tousertype(tolua_S,1,0);
+  LUA_FUNCTION listener = (  toluafix_ref_function(tolua_S,2,0));
+#ifndef TOLUA_RELEASE
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'registerListener'", NULL);
+#endif
+  {
+   self->registerListener(listener);
+  }
+ }
+ return 0;
+#ifndef TOLUA_RELEASE
+ tolua_lerror:
+ tolua_error(tolua_S,"#ferror in function 'registerListener'.",&tolua_err);
+ return 0;
+#endif
+}
+#endif //#ifndef TOLUA_DISABLE
+
+/* method: paysms of class  CCTelcom */
+#ifndef TOLUA_DISABLE_tolua_Cocos2d_CCTelcom_paysms00
+static int tolua_Cocos2d_CCTelcom_paysms00(lua_State* tolua_S)
+{
+#ifndef TOLUA_RELEASE
+ tolua_Error tolua_err;
+ if (
+     !tolua_isusertype(tolua_S,1,"CCTelcom",0,&tolua_err) ||
+     !tolua_isstring(tolua_S,2,0,&tolua_err) ||
+     !tolua_isstring(tolua_S,3,0,&tolua_err) ||
+     !tolua_isstring(tolua_S,4,0,&tolua_err) ||
+     !tolua_isnoobj(tolua_S,5,&tolua_err)
+ )
+  goto tolua_lerror;
+ else
+#endif
+ {
+  CCTelcom* self = (CCTelcom*)  tolua_tousertype(tolua_S,1,0);
+  const char* stext = ((const char*)  tolua_tostring(tolua_S,2,0));
+  const char* goodsubid = ((const char*)  tolua_tostring(tolua_S,3,0));
+  const char* oderid = ((const char*)  tolua_tostring(tolua_S,4,0));
+#ifndef TOLUA_RELEASE
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'paysms'", NULL);
+#endif
+  {
+   self->paysms(stext,goodsubid,oderid);
+  }
+ }
+ return 0;
+#ifndef TOLUA_RELEASE
+ tolua_lerror:
+ tolua_error(tolua_S,"#ferror in function 'paysms'.",&tolua_err);
+ return 0;
+#endif
+}
+#endif //#ifndef TOLUA_DISABLE
+
 /* Open function */
 TOLUA_API int tolua_Cocos2d_open (lua_State* tolua_S)
 {
@@ -71680,6 +71780,12 @@ TOLUA_API int tolua_Cocos2d_open (lua_State* tolua_S)
    tolua_function(tolua_S,"instance",tolua_Cocos2d_CCUnicom_instance00);
    tolua_function(tolua_S,"registerListener",tolua_Cocos2d_CCUnicom_registerListener00);
    tolua_function(tolua_S,"paysms",tolua_Cocos2d_CCUnicom_paysms00);
+  tolua_endmodule(tolua_S);
+  tolua_cclass(tolua_S,"CCTelcom","CCTelcom","",NULL);
+  tolua_beginmodule(tolua_S,"CCTelcom");
+   tolua_function(tolua_S,"instance",tolua_Cocos2d_CCTelcom_instance00);
+   tolua_function(tolua_S,"registerListener",tolua_Cocos2d_CCTelcom_registerListener00);
+   tolua_function(tolua_S,"paysms",tolua_Cocos2d_CCTelcom_paysms00);
   tolua_endmodule(tolua_S);
 
   { /* begin embedded lua code */

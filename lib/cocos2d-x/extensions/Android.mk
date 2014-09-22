@@ -175,7 +175,15 @@ LOCAL_SRC_FILES := \
     DragonBones/utils/ConstValues.cpp \
     DragonBones/utils/DBDataUtil.cpp \
     DragonBones/utils/DBGeometry.cpp \
-    DragonBones/utils/TransformUtil.cpp
+    DragonBones/utils/TransformUtil.cpp\
+    CCAdColony/AdColony.cpp\
+    CCAdmob/Admob.cpp\
+    CCChartboost/Chartboost.cpp\
+    CCGameCenter/GameCenter.cpp\
+    CCWeixin/Weixin.cpp\
+    CCWeixin/WeixinRespReq.cpp\
+    CCUnicom/Unicom.cpp\
+    CCTelcom/Telcom.cpp
 
 LOCAL_WHOLE_STATIC_LIBRARIES := cocos2dx_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocosdenshion_static

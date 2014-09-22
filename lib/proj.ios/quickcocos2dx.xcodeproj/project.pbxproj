@@ -27,6 +27,7 @@
 		2EBAD93D1918BBDC00FF9BD6 /* ccFilterShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EBAD92A1918BBDC00FF9BD6 /* ccFilterShaders.cpp */; };
 		49832215187FE2C000733BFB /* CZHelperFunc_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49832213187FE2C000733BFB /* CZHelperFunc_luabinding.cpp */; };
 		49832219187FE2DF00733BFB /* HelperFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49832217187FE2DF00733BFB /* HelperFunc.cpp */; };
+		7F856E1D19CFEBE2004C0259 /* Telcom.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F856E1B19CFEBE2004C0259 /* Telcom.mm */; };
 		7FECFE4F19B6F7D500D81D65 /* Admob.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE4B19B6F7D500D81D65 /* Admob.mm */; };
 		7FECFE5819B6F81F00D81D65 /* Chartboost.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE5419B6F81F00D81D65 /* Chartboost.mm */; };
 		7FECFE5919B6F81F00D81D65 /* ChartboostIOSDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FECFE5619B6F81F00D81D65 /* ChartboostIOSDelegate.mm */; };
@@ -531,6 +532,8 @@
 		7F12494019C2DD1F00FADC12 /* GADInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchase.h; sourceTree = "<group>"; };
 		7F12494119C2DD1F00FADC12 /* GADInAppPurchaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchaseDelegate.h; sourceTree = "<group>"; };
 		7F12494219C2DD1F00FADC12 /* GADModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADModules.h; sourceTree = "<group>"; };
+		7F856E1919CFEBE2004C0259 /* CCTelcom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTelcom.h; sourceTree = "<group>"; };
+		7F856E1B19CFEBE2004C0259 /* Telcom.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Telcom.mm; sourceTree = "<group>"; };
 		7FECFE4119B6F7D500D81D65 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
 		7FECFE4219B6F7D500D81D65 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
 		7FECFE4319B6F7D500D81D65 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
@@ -1619,6 +1622,15 @@
 			path = apptools;
 			sourceTree = "<group>";
 		};
+		7F856E1819CFEBE2004C0259 /* CCTelcom */ = {
+			isa = PBXGroup;
+			children = (
+				7F856E1919CFEBE2004C0259 /* CCTelcom.h */,
+				7F856E1B19CFEBE2004C0259 /* Telcom.mm */,
+			);
+			path = CCTelcom;
+			sourceTree = "<group>";
+		};
 		7FECFE3F19B6F7D500D81D65 /* CCAdmob */ = {
 			isa = PBXGroup;
 			children = (
@@ -2577,6 +2589,7 @@
 		F45A2E11166B16DC00760194 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7F856E1819CFEBE2004C0259 /* CCTelcom */,
 				7FECFE7419B8038000D81D65 /* CCAdColony */,
 				7FECFE6719B6F8B400D81D65 /* CCWeixin */,
 				7FECFE6119B6F86100D81D65 /* CCUnicom */,
@@ -4293,6 +4306,7 @@
 				F4D26E83196321AE0087295D /* CCActionFrameEasing.cpp in Sources */,
 				7FECFE7D19B8038000D81D65 /* AdColony.mm in Sources */,
 				F4A3A8F2182E7B810000EDD1 /* xxtea.c in Sources */,
+				7F856E1D19CFEBE2004C0259 /* Telcom.mm in Sources */,
 				F4E883CB1770163800577406 /* CCControlUtils.cpp in Sources */,
 				F459EB8A180D0513006CBDF1 /* tcp.c in Sources */,
 				F4E883CC1770163800577406 /* CCInvocation.cpp in Sources */,
