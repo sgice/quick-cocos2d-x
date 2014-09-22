@@ -28,6 +28,7 @@
 #import "EAGLView.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "CCWeixin/WeixinIos.h"
 
 @implementation AppController
 
@@ -37,6 +38,10 @@
 // cocos2d application instance
 static AppDelegate s_sharedApplication;
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    if ( [[WeixinIos shared]handleOpenURL:url] ) return TRUE;
+    return FALSE;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
