@@ -131,7 +131,7 @@ function UIListView:scrollListener(event)
 		local pos
 		if UIScrollView.DIRECTION_VERTICAL == self.direction then
 			for i,v in ipairs(self.items_) do
-				_, itemH = v:getItemSize()
+				itemW, itemH = v:getItemSize()
 
 				if nodePoint.y < height and nodePoint.y > height - itemH then
 					pos = i
@@ -142,7 +142,7 @@ function UIListView:scrollListener(event)
 			end
 		else
 			for i,v in ipairs(self.items_) do
-				itemW, _ = v:getItemSize()
+				itemW, itemH = v:getItemSize()
 
 				if nodePoint.x > width and nodePoint.x < width + itemW then
 					pos = i
@@ -155,8 +155,10 @@ function UIListView:scrollListener(event)
 		self:notifyListener_{name = "clicked",
 			listView = self, itemPos = pos, item = self.items_[pos],
 			point = nodePoint}
-	elseif "moved" == event.name then
 	else
+		event.scrollView = nil
+		event.listView = self
+		self:notifyListener_(event)
 	end
 
 end
