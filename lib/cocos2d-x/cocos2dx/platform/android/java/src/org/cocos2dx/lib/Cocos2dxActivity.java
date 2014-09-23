@@ -24,6 +24,7 @@ THE SOFTWARE.
 package org.cocos2dx.lib;
 
 import org.cocos2dx.lib.Cocos2dxHelper.Cocos2dxHelperListener;
+import org.cocos2dx.utils.PSNative;
 
 import com.chartboost.sdk.Chartboost;
 import com.jirbo.adcolony.AdColony;
@@ -74,7 +75,7 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
     	this.init();
 
 		Cocos2dxHelper.init(this, this);
-		
+		PSNative.init(this);
 		if(cb_id!=null)CCChartboost.Instance().init(this, cb_id, cb_sign);
 		if(adc_id!=null){
 			AdColony.configure( this, "version:1.0,store:google", adc_id, adc_zone );
